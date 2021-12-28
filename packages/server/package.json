@@ -1,11 +1,11 @@
 {
   "name": "@workspaces/server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/index.js",
   "license": "MIT",
   "dependencies": {
-    "@workspaces/client": "1.0.0",
-    "@workspaces/hello-world": "^0.1.0"
+    "@workspaces/client": "^1.0.1",
+    "@workspaces/hello-world": "^1.0.1"
   },
   "devDependencies": {
     "express": "^4.17.2",

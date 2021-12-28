@@ -1,0 +1,13 @@
+{
+  "name": "hello-world-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.17.2"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "build": "cd ../hello-world && yarn && yarn run build"
+  }
+}

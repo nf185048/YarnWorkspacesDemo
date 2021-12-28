@@ -1,8 +1,8 @@
 Arguments: 
-  /Users/NF185048/.nvm/versions/node/v12.1.0/bin/node /Users/NF185048/.nvm/versions/node/v12.1.0/bin/yarn add -W lerna
+  /Users/NF185048/.nvm/versions/node/v12.1.0/bin/node /Users/NF185048/.nvm/versions/node/v12.1.0/bin/yarn add lerna -W
 
 PATH: 
-  /Users/NF185048/.nvm/versions/node/v12.1.0/bin:/Users/NF185048/Documents/Workspaces/flutter/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:[Documents/Learning/flutter]/bin
+  /Users/NF185048/.nvm/versions/node/v12.1.0/bin:/Users/NF185048/Documents/Learning/workspaces/flutter/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:[Documents/Learning/flutter]/bin
 
 Yarn version: 
   1.22.15
@@ -29,7 +29,12 @@ npm manifest:
     ],
     "version": "1.0.0",
     "main": "index.js",
-    "license": "MIT"
+    "license": "MIT",
+    "scripts": {
+      "test": "lerna run test",
+      "new-version": "lerna version --conventional-commits --yes",
+      "diff": "lerna diff"
+    }
   }
 
 yarn manifest: 
